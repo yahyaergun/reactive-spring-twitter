@@ -1,0 +1,4 @@
+twitter:
+  api:
+    stream-base-url: http://localhost:8080/stream
+    filter-url: /wiremock

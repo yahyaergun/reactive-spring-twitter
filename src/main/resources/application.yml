@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  data:
+    mongodb:
+      database: tweets
+
+# pass along keys and secrets from twitter app for Oauth1 authentication
+twitter:
+  api:
+    consumer-key: ${TWITTER_APP_CONSUMER_KEY}
+    consumer-secret: ${TWITTER_APP_CONSUMER_SECRET}
+    access-token: ${TWITTER_APP_ACCESS_TOKEN}
+    access-token-secret: ${TWITTER_APP_ACCESS_TOKEN_SECRET}
+    stream-base-url: https://stream.twitter.com/1.1
+    filter-url: /statuses/filter.json
+
+
+
